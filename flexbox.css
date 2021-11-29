@@ -1,0 +1,58 @@
+.Container {
+    display: flex;
+    border: 5px solid black;
+    height: 45px;
+    padding: 2px;
+    width: 800px;
+    height: 300px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fcontainer {
+    display: flex;
+    border: 5px solid yellow;
+    background-color: pink;
+    padding: 4px;
+    margin: 5px;
+    width: 180px;
+    height: 150px;
+    flex-direction: row;
+    font-style: inherit;
+}
+
+.Item {
+    background-color: red;
+    border: 5px solid blue;
+    padding: 2px;
+    margin: 5px;
+    width: 180px;
+    height: 150px;
+    display: flex;
+}
+
+.Fblack {
+    display: flex;
+    background-color: green;
+    border: 5px solid red;
+    margin: 5px;
+    width: 180px;
+    height: 150px;
+    padding: 2px;
+}
+
+.Container .item1 {
+    border: 5px solid lightgreen;
+    background-color: yellow;
+}
+
+.fcontainer .item2 {
+    border: 5px solid purple;
+    background-color: pink;
+}
+
+.Fblack .item3 {
+    border: 5px solid wheat;
+    background-color: plum;
+}
