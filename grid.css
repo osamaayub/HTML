@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Book {
+    display: grid;
+    background-color: blue;
+    padding: 5px;
+    margin: 5px;
+    border: 5px solid black;
+    width: 950px;
+    height: 1200px;
+    grid-template-rows: 133px 133px 133px 133px;
+    row-gap: 10px;
+    column-gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: minmax(3, 1fr);
+    color: white;
+    justify-items: center;
+}
+
+.Grid-Container {
+    display: grid;
+    background-color: blueviolet;
+    padding: 5px;
+    margin: 4px;
+    border: 5px solid pink;
+    color: cadetblue;
+    grid-template-columns: 133px 133px 133px;
+    grid-template-rows: 133px 133px 133px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    column-gap: 10px;
+    grid-template-rows: (3, 1fr);
+    grid-template-columns: (repeat(3, 1fr));
+    row-gap: 10px;
+    width: 250px;
+    color: white;
+    justify-self: center;
+    place-self: center;
+}
+
+.item1 {
+    display: grid;
+    background-color: yellow;
+    grid-template-columns: 133px 133px 133px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 4px;
+    column-gap: 20px;
+    border: 5px solid blueviolet;
+    font-size: 13px;
+    grid-template-columns: (1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    width: 200px;
+}
+
+.item2 {
+    display: grid;
+    background-color: coral;
+    grid-row: inherit;
+    grid-template-columns: 133px 133px 133px;
+    padding-top: 10px;
+    margin: 4px;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding-bottom: 5px;
+    border: 5px solid yellowgreen;
+    font-size: 10px;
+    font-weight: bolder;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: subgrid(3, 1fr);
+    grid-area: calc(13px);
+    grid-row: 1 span 2;
+    width: 50px;
+}
+
+.item3 {
+    display: grid;
+    background-color: brown;
+    grid-row: inherit;
+    grid-template-columns: 133px 133px 133px;
+    padding-top: 10px;
+    margin: 5px;
+    column-gap: 20px;
+    border: 5px solid blanchedalmond;
+    font-size: 10px;
+    font-weight: bold;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: (3, 1fr);
+    grid-column-end: auto;
+    column-gap: 10px;
+    grid-column: 2 span 4;
+    width: 100px;
+}
+
+.item4 {
+    display: grid;
+    background-color: brown;
+    grid-row: inherit;
+    grid-template-columns: 133px 133px 133px;
+    padding-top: 10px;
+    margin: 5px;
+    column-gap: 5px;
+    border: 5px solid blanchedalmond;
+    font-size: 10px;
+    font-weight: bold;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: (3, 1fr);
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 150px;
+}
