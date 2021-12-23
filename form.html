@@ -1,51 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student form</title>
+    <title>Form validation</title>
 </head>
-<body style="background-color: gold;">
-<form style="color: blue;">
-<label for="fname">FirstName:</label><br><br>
-<input type="text" id="fname name="FirstName"></input><br>
-<label for="lname">LastName</label><br><br>
-<input type="text" id="lname"name="LastName"></input><br>
-<label for="email">Email</label><br>
-<input type="email" id="email"></input><br>
-<label for="contactNumber">contactNumber</label><br>
-<input type="number"id="contactNumber"></input><br>
-<label for="RollNumber">RollNumber</label><br>
-<input type="number"id="RollNumber"></input><br><br>
-Gender:<input type="radio" name="gg"required>Male</input><br>
-<input type="radio" name="gg"required>Female</input><br>
-<select required style="color: blue;"><br><br>
-    <option>Enter your City</option>
-    <option>Lahore</option>
-    <option>Karachi</option>
-    <option>Islamabad</option>
-    <option>Quetta</option>
-    <option>Sialkot</option>
-</select><br><br>
-hobbies:<br><br><input type="checkbox"/>Cricket
-<input type="checkbox"/>badminton
-<input type="checkbox"/>Basketball
-<input type="checkbox"/>Snooker
-<input type="checkbox"/>Football
-<input type="checkbox"/>Pubg
-<br>
-Courses:<br><br><input type="checkbox"/>Data Structure
-<input type="checkbox"/>Artifical Intelligence
-<input type="checkbox"/>Human Computer Interaction
-<input type="checkbox"/>Operating system
-<input type="checkbox"/>Psychology
-<br>
-<label for="Address">Address</label><br>
-<input type="text"id="Address"></input><br>
-<button style="color: blue;">Save the Form</button><br>
+<script type="text/javascript" src="form.js"></script>
 
-</form>
+<body>
+    <form action="action.php" method="post">
+        <div>
+            <label for="FirstName">FName</label>
+            <input type="text" name="Fname" placeholder="Enter your FirstName" id="Fname" maxlength="20">
+            <input type="button" name="btn" value="Validate FirstName" onclick="MyFunc();">
+        </div>
+
+        <div>
+            <label for="Lname">LName</label>
+            <input type="text" name="Lname" placeholder="Enter your LastName" maxlength="20" id="Lname">
+
+            <input type="button" name="btn" value="Validate Lastname" onclick="MyFunc1();">
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="email" placeholder="Enter your Email" id="email">
+            <input type="button" name="btn" value="Validate Email" onclick="Myfunc2();">
+        </div>
+        <div>
+            <label for="PhoneNumber">Phone</label>
+            <input type="fa-mobile-phone" name="phone" placeholder="Enter the Phone Number" id="phone">
+            <input type="button" name="btn" value="Validate Phone Number" onclick="Myfunc1();">
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="password" name="Password" placeholder="Enter the Password" id="Password">
+            <input type="button" name="btn" value="Validate Password" onclick="MyFunc3();">
+        </div>
+    </form>
 </body>
+
 </html>
