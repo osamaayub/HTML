@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Table Assignment</title>
+</head>
+<script type="text/javascript" src="table.js"></script>
+
+<body>
+        <table border="1" id="MyTable">
+            <h1>Shopping Cart</h1>
+            <tr>
+                <th>Product id</th>
+                <th>Product Name</th>
+                <th>Product Quantity</th>
+                <th>Product Price</th>
+            </tr>
+        </table>
+        <form onsubmit="Myfunc();"  return false>
+        <input type="text" name="pid" id="pid" placeholder="Enter the Product ID">
+         <input type="text" name="pname" id="pname" placeholder="Enter the Product Name">
+        <input type="text" name="PQuantity" id="PQuantity" placeholder="Enter the Product Quantity">
+        <input type="text" name="Price" id="Price" placeholder="Enter the Product Price">
+        <input type="button" value="Add to Card" onclick="Myfunc();">
+        </form> 
+</body>
+</html>
